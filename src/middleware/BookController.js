@@ -14,7 +14,7 @@ function validate(req,res,next) {
 function create(req,res,next) {
   var book = req.body;
   var result = db.save(book);
-  res.status(201).json(book);
+  res.status(201).json(result);
 }
 
 function update(req,res,next) {
@@ -54,6 +54,7 @@ function deleteAll(req,res,next) {
   db.drop();
   res.sendStatus(204);
 }
+
 
 module.exports = {
   validate: validate,

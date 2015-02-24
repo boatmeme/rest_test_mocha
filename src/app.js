@@ -19,7 +19,7 @@ function start(port) {
   var server = app.listen(port, function () {
     var host = server.address().address
     var port = server.address().port
-    console.log('Books app listening at http://%s:%s', host, port)
+    console.log('Books API listening at http://%s:%s', host, port)
   });
   return server;
 }

@@ -2,7 +2,6 @@ var Guid = require('guid');
 var _ = require('lodash');
 var db = {};
 
-
 module.exports = {
   save: function(book) {
     book.updated_at = Date.now();

@@ -46,9 +46,13 @@
 				<section data-transition="zoom">
 					<h1>API Testing with Mocha</h1>
 					<p>
-						<small>
+						<small style="margin-right:20px;">
 							Jonathan Griggs <br/>
 							<a href="mailto:jonathan@ombud.com">jonathan@ombud.com</a>
+						</small>
+						<small>
+							Tim Myers <br/>
+							<a href="mailto:tim@ombud.com">tim@ombud.com</a>
 						</small>
 					</p>
 				</section>
@@ -57,7 +61,7 @@
 					<h2>What is a Test?</h1>
 					<div class="fragment">
 						<blockquote cite="https://github.com/boatmeme/rest_test_mocha">
-							&ldquo;Asserting the functional state of a system by comparing its expected output with its acutal output.&rdquo;
+							&ldquo;Asserting the functional state of a system by comparing its expected output with its actual output.&rdquo;
 						</blockquote>
 					</div>
 					<aside class="notes">
@@ -162,7 +166,7 @@ end
 				</section>
 
 				<section>
-					<h2>Example System</h2>
+					<h2>Example: Roku Pairing Token API</h2>
 					<img style="background: #111; border:0px;" src="assets/Test Blocks.png">
 					<ul>
 						<li>Token Web App - A front-end user interface</li>
@@ -171,7 +175,6 @@ end
 						<li>Token DB - A class that persists tokens to a database</li>
 					</ul>
 				</section>
-
 
 				<section>
 					<h1>Unit Test</h1>
@@ -281,7 +284,7 @@ end
 
 				<section>
 					<h1>Why Test?</h1>
-					<h2 class="fragment">(Beginner)</h2>
+					<h2 class="fragment">(Skeptical)</h2>
 				</section>
 
 				<section>
@@ -299,7 +302,7 @@ end
 
 				<section>
 					<h2>Approach</h2>
-					<h3>(Beginner)</h3>
+					<h3>(Skeptical)</h3>
 					<ul class="plusminus">
 						<li class="fragment plus">I'll write some test harnesses to automate testing complex scenarios</li>
 						<li class="fragment minus">Has a cost, in terms of time and code</li>
@@ -310,7 +313,7 @@ end
 
 				<section>
 					<h2>Lessons</h2>
-					<h3>(Beginner)</h3>
+					<h3>(Skeptical)</h3>
 					<ul class="plusminus">
 						<li class="fragment plus">QA catches some defects</li>
 						<li class="fragment minus">My code is, unfortunately, not perfect</li>
@@ -322,7 +325,7 @@ end
 
 				<section>
 					<h1>Why Test?</h1>
-					<h2>(Intermediate)</h2>
+					<h2>(Open-minded)</h2>
 				</section>
 
 				<section>
@@ -346,7 +349,7 @@ end
 
 				<section>
 					<h2>Approach</h2>
-					<h3>(Intermediate)</h3>
+					<h3>(Open-minded)</h3>
 					<ul class="plusminus">
 						<li class="fragment plus">Code coverage probably does lead to higher quality code</li>
 						<li class="fragment plus">A good excuse to try Test Driven Development for new code</li>
@@ -356,7 +359,7 @@ end
 
 				<section data-transition="fade">
 					<h2>Lessons</h2>
-					<h3>(Intermediate)</h3>
+					<h3>(Open-minded)</h3>
 					<ul class="plusminus">
 						<li class="fragment minus">Writing tests for existing code was painful
 							<ul class="regular">
@@ -370,7 +373,7 @@ end
 					</section>
 					<section data-transition="fade">
 							<h2>Lessons</h2>
-							<h3>(Intermediate)</h3>
+							<h3>(Open-minded)</h3>
 							<ul class="plusminus">
 								<li class="minus">Code coverage not a good indicator of system correctness
 									<ul class="regular">
@@ -383,7 +386,7 @@ end
 
 					<section data-transition="fade">
 							<h2>Lessons</h2>
-							<h3>(Intermediate)</h3>
+							<h3>(Open-minded)</h3>
 							<ul class="plusminus">
 								<li class="plus">Code coverage is a good indicator of problematic design
 									<ul class="regular">
@@ -396,12 +399,14 @@ end
 
 					<section data-transition="fade">
 							<h2>Lessons</h2>
-							<h3>(Intermediate)</h3>
+							<h3>(Open-minded)</h3>
 							<ul class="plusminus">
 								<li class="fragment plus">New code developed under TDD (test-first) seemed to be of "higher quality"
 									<ul class="regular">
 										<li class="fragment">Code coverage for free</li>
-								  	<li class="fragment">Fewer overall defects</li>
+										<li class="fragment">Minimal implementations</li>
+								  	<li class="fragment">More robust, reusable code</li>
+								  	<li class="fragment">Fewer repeat defects</li>
 								  </ul>
 								</li>
 							</ul>
@@ -410,10 +415,12 @@ end
 					<section data-transition="fade">
 							<h2>What does this mean?</h2>
 							<ul class="plusminus">
-								<li class="fragment plus">Test-Driven Development has some desirous side-effects
+								<li class="fragment plus">Test-Driven Development has some positive side-effects
 									<ul class="regular">
 										<li class="fragment">Developers better understand the use case before they write a single line of code</li>
-								  	<li class="fragment">Code that is easier to test is code that is easier to change</li>
+								  	<li class="fragment">Code that is easier to test is easier to maintain</li>
+								  	<li class="fragment">Test failures become more meaningful</li>
+								  	<li class="fragment">Tests become a specification for the behavior of the system</li>
 								  </ul>
 								</li>
 							</ul>
@@ -425,11 +432,11 @@ end
 
 				<section>
 					<h1>Why Test?</h1>
-					<h2>(Advanced)</h2>
+					<h2>(True Believer)</h2>
+					<h2 class="fragment">Let's do some TDD right now.</h2>
 				</section>
 
 				<section>
-					<h2>Let's do some TDD right now.</h2>
 					<h2>Use Case - Books API</h2>
 					<ul>
 						<li class="fragment">Front-end application needs a RESTful API for managing books</li>
@@ -441,8 +448,28 @@ end
 					</ul>
 				</section>
 
+				<section>
+					<h2>Resources</h2>
+					<ul>
+						<li>Mocha - <a href="http://mochajs.org/">http://mochajs.org/</a></li>
+						<li>Should.js - <a href="https://github.com/shouldjs/should.js">https://github.com/shouldjs/should.js</a></li>
+						<li>Supertest - <a href="https://github.com/visionmedia/supertest">https://github.com/visionmedia/supertest</a>
+						<li>HTTP Status Code Definitions (W3C) - <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a>
+					</ul>
 				</section>
 
+				<section>
+					<h2>Thank You!</h2>
+					<h4><a href="https://github.com/boatmeme/rest_test_mocha">https://github.com/boatmeme/rest_test_mocha</a></h4>
+					<ul>
+						<li>Jonathan Griggs - jonathan@ombud.com</li>
+						<li>Tim Myers - tim@ombud.com</li>
+					</ul>
+					<div>
+						<img src="/assets/ombud_logo.png" style="border:0px;background:#111;" alt="Ombud Logo" ><br/>
+						<small><a href="https://ombud.com">https://ombud.com</a></small>
+					</div>
+				</section>
 			</div>
 
 		</div>
