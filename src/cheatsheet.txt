@@ -1,0 +1,30 @@
+
+
+//supertest syntax
+
+request(api)
+  .post(url)
+  .send(book)
+  .expect(201)
+  .end(function(err,res){
+    if(err) throw err;
+    res.body.should.be.an.Object;
+    res.body.should.have.property('name');
+    res.body.should.have.property('author');
+    res.body.should.have.property('id');
+    done();
+  });
+
+// HTTP scaffold
+    describe('POST', function() {
+
+    });
+    describe('GET', function() {
+
+    });
+    describe('PUT', function() {
+
+    });
+    describe('DELETE', function() {
+
+    });

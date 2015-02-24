@@ -1,0 +1,51 @@
+.underline {
+  text-decoration: underline;
+}
+
+.bigger {
+  text-decoration: underline;
+}
+
+ul.plusminus {
+  list-style-type: none;
+}
+
+ul.regular {
+  color: white;
+}
+
+.plus {
+  color: green;
+}
+
+.minus {
+  color: red;
+}
+
+ul.plusminus li.plus:before {
+    content: "+";
+    margin-right: 4px;
+}
+
+ul.plusminus li.minus:before {
+    content: "-";
+    margin-right: 4px;
+}
+
+.pull-right {
+  float: right;
+  display: inline-block;
+}
+
+.pull-left {
+  float: left;
+  display: inline-block;
+}
+
+.left {
+  text-align: left;
+}
+
+.bg-white {
+  background: white;
+}
