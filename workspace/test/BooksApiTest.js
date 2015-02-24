@@ -1,7 +1,7 @@
 var request = require('supertest');
 var should = require('should');
-var server = require('../server.js');
-var lodash = require('lodash');
+var server = require('../app.js');
+var _ = require('lodash');
 var api = server.app;
 
 var method = {
