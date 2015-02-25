@@ -1,0 +1,37 @@
+{
+  "name": "RestTestMocha",
+  "version": "0.0.0",
+  "description": "An app demonstrating BDD testing of a RESTful Express API using Mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Griggs <jonathan@ombud.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boatmeme/rest_test_mocha"
+  },
+  "keywords": [
+    "mocha",
+    "test",
+    "rest",
+    "express",
+    "api"
+  ],
+  "bugs": {
+    "url": "https://github.com/boatmeme/rest_test_mocha/issues"
+  },
+  "homepage": "https://github.com/boatmeme/rest_test_mocha",
+  "dependencies": {
+    "express": "~4.12.0",
+    "body-parser": "~1.12.0",
+    "guid": "0.0.12",
+    "lodash": "~3.3.1"
+  },
+  "devDependencies": {
+    "mocha": "~2.1.0",
+    "should": "~5.0.0",
+    "supertest": "~0.15.0"
+  }
+}
